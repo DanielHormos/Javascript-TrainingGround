@@ -16,5 +16,13 @@ myFunctions = {
         const main = document.querySelector("main")
         main.appentChild(ulElement)
     }
+    ,
+    removeElementById: function (id) {
+        const divToRemove = document.querySelector("div#" + id)
+        if(divToRemove != undefined) {
+            divToRemove.remove()
+        }
+        
+    }
 }
 console.log("salt> Functions loaded")
