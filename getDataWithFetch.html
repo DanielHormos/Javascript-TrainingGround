@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         function getUsers(element) {
-            fetch("https://randomuser.me/api/?gender=female&result=30")
+            fetch("https://randomuser.me/api/?gender=female&results=30")
                 .then(response => response.json())
                 .then(data => {
                     const userList = createUserList(data.results)
@@ -45,9 +45,8 @@
             return userImage
         }
     </script>
-    <title>Document</title>
+    <title>User Fetcher</title>
 </head>
 <body>
-    <main></main>
 </body>
 </html>
